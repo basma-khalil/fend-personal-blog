@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is my web design journey, tips and tutorials">
+    <title>Codingify</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap">
+	  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Start Header -->
+      <header class="main-header">
+        <!-- Start Header Hamburger -->
+        <input id="header__hamburger" class="header__hamburger" type="checkbox">
+        <label class="menu-btn" for="header__hamburger">
+          <span></span>
+        </label>
+        <!-- Start Header Logo -->
+        <div class="header__logo">
+          <h1 class="site-logo"><a href="index.html">coding<span>ify</span></a></h1>
+        </div>
+        <!-- Start Header Navigation -->
+        <div class="header__nav">
+          <nav>
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="#">tips</a></li>
+              <li class="dropdown">
+                <a href="#">tutorials &#9662;</a>
+                <ul class="dropdown__menu">
+                  <li><a href="#">html</a></li>
+                  <li><a href="#">css</a></li>
+                  <li><a href="#">javascript</a></li>
+                </ul>
+              </li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Start Header Search -->
+        <div class="header__search">
+          <form class="search__form">
+            <input type="search" placeholder="Search..">
+            <button type="button">
+              <svg>
+                <use href="images/icons/search-solid.svg#fa-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </header>
+      <!-- End Header -->
+      <!-- Start Main -->
+      <main>
+        <!-- Start Subscribe Form -->
+        <div id="popup" class="subscribe__overlay">
+          <div class="subscribe__wrap">
+            <a href="#" class="close-form"  role="button" aria-label="Close Account Info Modal Box">&times;</a>
+            <h2>want to begin your web design career?</h2>
+            <p>Subscribe today to receive new design tips in your inbox</p>
+            <form method="post">
+              <input type="email" placeholder="&#9993; Your email address">
+              <button type="submit">join</button>
+            </form>
+          </div>
+        </div>
+        <!-- Scroll To Top Button -->
+        <a href="#top" class="top-btn" role="button" title="Go to top">
+          <span></span>
+        </a>
+        <!-- Start Intro -->
+        <article class="intro">
+          <figure class="intro__img">
+            <!-- Background vector created by vectorpouch - www.freepik.com -->
+            <img src="images/home/intro.jpg" alt="Intro">
+          </figure>
+          <div class="intro__description">
+            <h2><span>start now</span>everyone can code</h2>
+            <p>This is my web design journey, tips and tutorials</p>
+            <p>Please join me on this trip</p>
+            <a href="#popup" class="main--btn" role="button">subscribe</a>
+          </div>
+        </article>
+        <!-- Start Latest Posts -->
+        <section class="latest-posts">
+          <h2>Latest Posts</h2>
+          <div class="posts">
+            <!-- Start Post Card -->
+            <article class="post-card">
+              <div class="card__background">
+                <div class="card__snippit">
+                  <header class="card__header">
+                    <h3><a href="#">I'm a web designer noob</a></h3>
+                    <div class="info">
+                      <span class="info__date">Feb 16, 2020</span>
+                      <span class="info__comments"><svg><use href="images/icons/comment-regular.svg#fa-comment"></use></svg>0</span>
+                      <div class="info__tags">
+                        <a href="#">css</a>
+                        <a href="#">html</a>
+                        <a href="#">javascript</a>
+                      </div>
+                    </div>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ultrices turpis. Cras dictum leo lorem, in fringilla urna luctus eu.</p>
+                  <a href="#" class="read--more" role="button">read more</a>
+                </div>
+              </div>
+              <figure class="card__img">
+                <img src="images/home/photo-by-dho-pratama-unsplash.jpg" alt="Design Step By Step">
+              </figure>
+            </article>
+            <!-- Start Post Card -->
+            <article class="post-card">
+              <div class="card__background">
+                <div class="card__snippit">
+                  <header class="card__header">
+                    <h3><a href="#">I'm a web designer noob</a></h3>
+                    <div class="info">
+                      <span class="info__date">Feb 8, 2020</span>
+                      <span class="info__comments"><svg><use href="images/icons/comment-regular.svg#fa-comment"></use></svg>0</span>
+                      <div class="info__tags">
+                        <a href="#">css</a>
+                        <a href="#">html</a>
+                        <a href="#">javascript</a>
+                      </div>
+                    </div>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ultrices turpis. Cras dictum leo lorem, in fringilla urna luctus eu.</p>
+                  <a href="#" class="read--more" role="button">read more</a>
+                </div>
+              </div>
+              <figure class="card__img">
+                <img src="images/home/photo-by-kobu-agency-unsplash.jpg" alt="Learn Web Design Languages">
+              </figure>
+            </article>
+            <!-- Start Post Card -->
+            <article class="post-card">
+              <div class="card__background">
+                <div class="card__snippit">
+                  <header class="card__header">
+                    <h3><a href="i-am-a-web-designer-noob.html">I'm a web designer noob</a></h3>
+                    <div class="info">
+                      <span class="info__date">Feb 1, 2020</span>
+                      <span class="info__comments"><svg><use href="images/icons/comment-regular.svg#fa-comment"></use></svg>4</span>
+                      <div class="info__tags">
+                        <a href="#">general</a>
+                      </div>
+                    </div>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in ultrices turpis. Cras dictum leo lorem, in fringilla urna luctus eu.</p>
+                  <a href="i-am-a-web-designer-noob.html" class="read--more" role="button">read more</a>
+                </div>
+              </div>
+              <figure class="card__img">
+				<img src="images/post/designer-noob-600w.jpg" alt="A Web Designer Noob">
+              </figure>
+            </article>
+          </div>
+          <button class="minor--btn">load more</button>
+        </section>
+        <!-- Start About -->
+        <div class="about">
+          <div class="about__img">
+            <figure>
+              <img src="images/hijab-girl-wpap.jpg" alt="Author Thumbnail Image">
+            </figure>
+          </div>
+          <div class="about__description">
+            <p>Hello there,</p>
+            <p>I'm Basma from Egypt. A former Engineer, who starts another new interesting building career.</p>
+          </div>
+        </div>
+      </main>
+      <!-- End Main -->
+      <!-- Start Footer -->
+      <footer class="main-footer">
+        <div class="copyright">
+          <p>copright &copy;2020 basma khalil</p>
+        </div>
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#">
+                <svg>
+                  <use href="images/icons/facebook-f-brands.svg#fa-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use href="images/icons/twitter-brands.svg#fa-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use href="images/icons/youtube-brands.svg#fa-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use href="images/icons/linkedin-in-brands.svg#fa-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use href="images/icons/codepen-brands.svg#fa-codepen"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+  </body>
+</html>

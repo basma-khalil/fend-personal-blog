@@ -1,0 +1,329 @@
+/* ---- Base Rules ---- */
+/* Variables */
+:root {
+	--primary: #64306b;
+	--secondary: #fed523;
+	--light: #c297c7;
+	--dark: #470628;
+	--white: #fff;
+	--black: #0a040a;
+}
+
+/* Main */
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--dark);
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+main {
+	padding: 0 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	vertical-align: middle;
+	color: var(--primary);
+	text-decoration: none;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+a:hover,
+a:active {
+	color: var(--light);
+}
+
+img,
+svg {
+ 	max-width: 100%;
+	vertical-align: middle;
+}
+
+svg {
+	max-height: 100%;
+}
+
+figure {
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+figcaption {
+	color: var(--primary);
+	font-size: 1rem;
+	text-align: left;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+blockquote {
+	padding: 1rem 2rem;
+	font-style: italic;
+	quotes: "“" "”" "‘" "’";
+}
+
+blockquote>:first-child:before {
+    content: open-quote;
+    color: var(--light);
+}
+
+blockquote>:last-child:after {
+    content: close-quote;
+    color: var(--light);
+}
+
+blockquote p {
+	color: var(--dark) !important;
+	font-weight: 600 !important;
+}
+
+
+/* ---- Custom Rules ---- */
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"hd"
+	"main"
+	"ft";
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Start Subscribe Form */
+.subscribe__overlay {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	z-index: 100;
+}
+
+.subscribe__overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.subscribe__wrap {
+	position: relative;
+	margin: 6% auto;
+	width: 90%;
+	padding: 2rem;
+	background: var(--white);
+	text-align: center;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0 14px 42px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 14px 42px 0 rgba(0, 0, 0, 0.3);
+}
+
+.subscribe__wrap .close-form {
+	position: absolute;
+	top: 0.5rem;
+	right: 1.5rem;
+	color: #333;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.subscribe__wrap .close-form:hover {
+	color: var(--primary);
+}
+
+.subscribe__wrap form {
+	margin: 3rem auto;
+}
+
+.subscribe__wrap form input,
+.subscribe__wrap form button {
+	display: block;
+	width: 100%;
+	height: 3rem;
+	padding: 0.7rem;
+	border: 0;
+	outline: 0;
+	-webkit-transition: border-bottom 0.5s, -webkit-box-shadow 0.5s;
+	transition: border-bottom 0.5s, -webkit-box-shadow 0.5s;
+	transition: border-bottom 0.5s, box-shadow 0.5s;
+	transition: border-bottom 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+
+}
+
+.subscribe__wrap form input {
+	margin-bottom: 2.5rem;
+	font-size: 1rem;
+	border-bottom: 2px solid #ccc;
+}
+
+.subscribe__wrap form input:focus {
+	border-bottom: 1px solid var(--dark);
+	-webkit-box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.26);
+	box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.26);
+}
+
+.subscribe__wrap form button {
+	background: var(--primary);
+	color: var(--white);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	-webkit-box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.3);
+	box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.subscribe__wrap form button:hover {
+	-webkit-box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll To Top Button */
+a.top-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+ 	padding: 0.9375rem 0.625rem 0;
+	background-color: var(--light);
+	opacity: 0.6;
+	line-height: normal;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+	-webkit-transition: opacity 1s, -webkit-box-shadow 1s;
+	transition: opacity 1s, -webkit-box-shadow 1s;
+	transition: opacity 1s, box-shadow 1s;
+	transition: opacity 1s, box-shadow 1s, -webkit-box-shadow 1s;
+	z-index: 99;
+}
+
+a.top-btn span {
+	display: inline-block;
+    padding: 0.5rem;
+    border: solid var(--white);
+    border-width: 0 0.25rem 0.25rem 0;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+a.top-btn:hover {
+    opacity: 1;
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 8px 6px -6px #000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 8px 6px -6px #000;
+}
+
+/* Buttons */
+a.main--btn,
+.minor--btn {
+	margin: 1rem 0;
+	padding: 0.7rem 1rem;
+	color: var(--white);
+	font-family: arial;
+	font-size: 1.7rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 2rem;
+	outline: 0;
+	-webkit-transition: background 0.5s, opacity 0.5s, -webkit-box-shadow 0.5s !important;
+	transition: background 0.5s, opacity 0.5s, -webkit-box-shadow 0.5s !important;
+	transition: background 0.5s, opacity 0.5s, box-shadow 0.5s;
+	transition: background 0.5s, opacity 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+	cursor: pointer;
+}
+
+a.main--btn {
+	display: inline-block;
+	background: var(--secondary);
+	color: var(--white);
+	line-height: normal;
+	border: solid 2px var(--secondary);
+}
+
+.minor--btn {
+	background: var(--light);
+	border: 0;
+}
+
+.main--btn:hover,
+.minor--btn:hover {
+	opacity: 0.8;
+	-webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.minor--btn:hover {
+	background: var(--primary);
+}
+
+
+/* ---- Media Query ---- */
+@media screen and (min-width: 600px) {
+	main {
+		padding: 0 2rem;
+	}
+
+	.subscribe__wrap {
+		width: 70%;
+		padding: 3rem;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.container {
+		max-width: 1170px;
+	}
+
+	.subscribe__wrap {
+		width: 35%;
+		margin: 11% auto;
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	body {
+		overflow-x: hidden;
+	}
+}

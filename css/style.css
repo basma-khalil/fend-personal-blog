@@ -1,0 +1,268 @@
+/* ---- Including CSS Files ---- */
+@import "global.css";
+@import "header.css";
+@import "footer.css";
+
+
+/* ---- Home Page Style ---- */
+/* Start Main */
+main {
+	grid-area: main;
+}
+
+/* Start Intro */
+.intro {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 3.5rem 0;
+}
+
+.intro__img,
+.intro__description {
+	width: 100%;
+}
+
+.intro__description h2 {
+	font-size: 3rem;
+	font-weight: 900;
+	line-height: 4.5rem;
+}
+
+.intro__description h2 span {
+	display: block;
+}
+
+.intro__description p {
+	font-weight: 600;
+}
+
+/* Start Latest Posts */
+.latest-posts {
+	margin-bottom: 5rem;
+ 	text-align: center;
+}
+
+.posts {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	grid-gap: 2rem;
+	margin: 3rem 0;
+}
+
+.post-card {
+	position: relative;
+	height: 36rem;
+}
+
+.post-card:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.post-card:hover .card__img {
+	-webkit-box-shadow: 0 14px 42px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 14px 42px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__background {
+	width: 90%;
+	height: 90%;
+	background: var(--light);
+	border-radius: 0.8rem;
+}
+
+.card__snippit {
+	max-height: 62%;
+	padding: 0.1rem 1.25rem;
+	color: var(--white);
+	text-align: left;
+}
+
+.card__snippit a {
+	color: var(--white);
+	-webkit-transition: padding-left 1s, color 1s, border 1s;
+	transition: padding-left 1s, color 1s, border 1s;
+}
+
+.card__snippit a:hover,
+.card__snippit a:active {
+	text-decoration: underline;
+}
+
+.card__header {
+	margin-bottom: 2rem;
+}
+
+.card__header h3 {
+	font-weight: 900;
+	margin-bottom: 1rem;
+}
+
+.card__header .info {
+	font-family: "Open Sans", sans-serif;
+	color: #ece5e5;
+	font-size: 1rem;
+}
+
+.info__date {
+	margin-right: 0.25rem;
+}
+
+.info__comments::before {
+	content: "|";
+}
+
+.info__comments svg {
+	padding: 0 0.5rem;
+	width: 2rem;
+	height: 1rem;
+}
+
+.info__tags a {
+	margin-right: 0.01rem;
+	padding: 0 0.5rem;
+	color: #ece5e5;
+	font-size: 0.9rem;
+	font-weight: 600;
+	border: 1.5px solid #b491b9;
+	border-radius: 1.5rem;
+}
+
+.info__tags a:hover,
+.info__tags a:active {
+	color: var(--primary);
+	text-decoration: none;
+	border: 1.5px solid var(--white);
+}
+
+.card__snippit p {
+	max-height: 25%;
+	font-size: 1.05rem;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.read--more {
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.read--more:hover,
+.read--more:active {
+	padding-left: 0.5rem;
+}
+
+.read--more:hover::after {
+	content: " »";
+}
+
+.card__img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	max-height: 45%;
+	border-radius: 0.8rem;
+	-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: -webkit-box-shadow 1s;
+	transition: -webkit-box-shadow 1s;
+	transition: box-shadow 1s;
+	transition: box-shadow 1s, -webkit-box-shadow 1s;
+}
+
+.card__img img {
+	-webkit-transition: -webkit-transform 1s;
+	transition: -webkit-transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
+}
+
+/* Start About */
+.about {
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto 8rem;
+	padding: 1.1rem;
+	background: #f2eaf3;
+	border-radius: 0.8rem;
+	font-weight: 600;
+	-webkit-box-shadow: 0 14px 42px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 14px 42px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about__img {
+	width: 100%;
+}
+
+.about__img figure {
+	width: 8rem;
+	height: 8rem;
+	margin: auto;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about__description {
+	width: 100%;
+	text-align: center;
+}
+/* End Main */
+
+
+/* ---- Media Query ---- */
+@media screen and (min-width: 600px) {
+	.intro__description h2 {
+		font-size: 3.5rem;
+	}
+
+	.posts {
+		grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+	}
+
+	.about {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+
+	.about__img {
+		width: auto;
+		margin-right: 2rem;
+	}
+
+	.about__description {
+		width: auto;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.intro__img {
+		width: 50%;
+	}
+
+	.intro__description {
+		width: 50%;
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
+		order: -1;
+	}
+
+	.about {
+		padding: 1.5rem 5rem;
+	}
+}
