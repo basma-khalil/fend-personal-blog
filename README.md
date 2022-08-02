@@ -4,14 +4,17 @@ This is my Udacity Front End Nanodegree first project
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Project Specification](#project-specification)
-* [Usability](#usability)
-* [Content Sources License](#content-sources-license)
+- [Personal Blog Website](#personal-blog-website)
+  - [Table of Contents](#table-of-contents)
+  - [Instructions](#instructions)
+  - [Project Specification](#project-specification)
+  - [Usability](#usability)
+    - [Browser compatibility](#browser-compatibility)
+  - [Content Sources License](#content-sources-license)
 
 ## Instructions
 
-This project requires to utilize HTML and CSS skills to build out a personal blog website, including custom images, layout, and styling. Along with webpage design considerations, work to appropriately structure files, as well as use proper CSS and HTML formatting & style.
+This project requires utilizing HTML and CSS skills to build a personal blog website, including custom images, layout, and styling. Along with webpage design considerations, files must be appropriately structured and use proper CSS and HTML formatting & style.
 
 For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
 
