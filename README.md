@@ -11,6 +11,7 @@ This is my Udacity Front End Nanodegree first project
   - [Usability](#usability)
     - [Browser compatibility](#browser-compatibility)
   - [Content Sources License](#content-sources-license)
+  - [Demo](#demo)
 
 ## Instructions
 
@@ -52,3 +53,7 @@ The site was tested on Google Chrome only
 
     \* Permission via [Email](mailto:exofar.art@gmail.com "Send Email")
   * Open\-source SVG Avatar by [unDraw](https://undraw.co "Go to link")
+
+## Demo
+
+For Demo of this template you can visit [bk-codingify.netlify.app](https://bk-codingify.netlify.app "Go to website")
